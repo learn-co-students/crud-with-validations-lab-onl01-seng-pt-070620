@@ -1,0 +1,12 @@
+ <div class="songSolo">
+    <ul>
+      <li><div class="songImg"><img src="<%= grab_art(@song) %>"></div></li>
+      <li>
+        <div class="songtitle"><%= @song.title %> </div>
+        <h2><%= @song.artist_name %></h2>
+        <%= @song.released %>
+        <%= @song.release_year %>
+        <%= @song.genre %>
+      </li>
+    </ul>
+  </div>

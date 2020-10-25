@@ -1,0 +1,59 @@
+// Place all the styles related to the Songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #816F68;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+}
+input {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+div ul {
+  list-style-type: none;
+}
+.songRow {
+  background-color: #BAABBD;
+  text-align: center;
+  z-index: 1;
+}
+.songSolo {
+  text-align: center;
+  z-index: 1;
+}
+.songSolo.songSolo img {
+  border-radius: 0;
+  box-shadow: 5px 10px 5px #000000;
+}
+.songtitle {
+  font-weight: 500;
+  font-size: 100px;
+  color: pink;
+  z-index: 2;
+  top: -200px;
+  position: relative;
+  mix-blend-mode: luminosity;
+  margin-bottom: -100px;
+  text-shadow: 1px 5px 5px #000000;
+}
+.songRow h2 {
+  font-weight: 200;
+
+}
+.songImg {
+
+}
+.songImg img {
+  //box-shadow: 5px 10px 5px #000000;
+  border-radius: 50%;
+}
+.songRow:nth-child(even) {
+  background-color: #9F838C;
+}

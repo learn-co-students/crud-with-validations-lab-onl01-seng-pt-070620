@@ -1,0 +1,19 @@
+<div class="wrapper">
+<% @songs.each do |song| %>
+  <div class="songRow">
+    <ul>
+      <li>
+        <%= link_to song_path(song) do %>
+          <div class="songImg"><img src="<%= grab_art(song) %>"></div></li>
+        <% end %>
+      <li>
+        <div class="songtitle"><%= link_to song.title, song_path(song) %></div>
+        <h2><%= song.artist_name %></h2>
+        <%= song.released %>
+        <%= song.release_year %>
+        <%= song.genre %>
+      </li>
+    </ul>
+  </div>
+<% end %>
+</div>

@@ -13,9 +13,20 @@
  *= require_tree .
  *= require_self
  */
-
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
 }
+.error_explained {
+    color:red;
+    font-weight: 500;
+}
+.field_with_errors {
+    align-content: center;
+    text-align: center;
+}
+.field_with_errors input {
+    border: 1px solid red;
+}
+

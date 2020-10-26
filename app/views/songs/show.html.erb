@@ -1,6 +1,13 @@
  <div class="songSolo">
     <ul>
-      <li><div class="songImg"><img src="<%= grab_art(@song) %>"></div></li>
+      <li>
+
+        <div class="songImg">
+          <div class="imgdupe"> <img src="<%= grab_art(@song) %>"> </div>
+        <img src="<%= grab_art(@song) %>">
+          <div class="imgdupetwo"> <img src="<%= grab_art(@song) %>"> </div>
+        </div>
+      </li>
       <li>
         <div class="songtitle"><%= @song.title %> </div>
         <h2><%= @song.artist_name %></h2>

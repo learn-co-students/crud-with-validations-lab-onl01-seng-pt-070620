@@ -28,9 +28,30 @@ div ul {
   text-align: center;
   z-index: 1;
 }
+.imgdupe {
+ display: inline;
+  opacity: 30%;
+  z-index: -1;
+  position: relative;
+  left: 50px;
+  top: -10px;
+}
+.imgdupetwo {
+  display: inline;
+  opacity: 30%;
+  z-index: -1;
+  position: relative;
+  right: 50px;
+  top: -10px
+}
 .songSolo.songSolo img {
   border-radius: 0;
   box-shadow: 5px 10px 5px #000000;
+  position: relative;
+
+}
+.songSolo songImgduplicate {
+  background-color: red;
 }
 .songtitle {
   font-weight: 500;

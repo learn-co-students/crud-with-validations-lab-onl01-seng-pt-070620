@@ -8,6 +8,7 @@
             <th>Release_year</th>
             <th>artist_name</th>
             <th>genre</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -18,10 +19,12 @@
                 <td><%= song.release_year %></td>
                 <td><%= song.artist_name %></td>
                 <td><%= song.genre %></td>
+                <td>
+                    <%= link_to 'Show this song', song %>
+                    <%= link_to 'Edit this song', edit_song_path(song) %>
+                    <%= link_to 'Delete this song', song, method: :delete, data: { confirm: 'Are you sure to delete this song?'} %>
+                </td>
             </tr>
-            <li><%= link_to 'Show this song', song %></li>
-            <li><%= link_to 'Edit this song', edit_song_path(song) %></li>
-            <li><%= link_to 'Delete this song', song, method: :delete, data: { confirm: 'Are you sure to delete this song?'} %></li>
         <% end %>
     </tbody>
 </table>

@@ -1,0 +1,31 @@
+<% if @song.errors.any? %>
+<div id="error_explanation">
+  <h2>
+    <%= pluralize(@song.errors.count, "error") %>
+    prohibited this post from being saved:
+  </h2>
+
+  <ul>
+  <% @song.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>
+
+
+
+<%= form_for (@song) do |f| %>
+    <%= label_tag "title", "Title" %>
+    <%= f.text_field :title %>
+    <%= label_tag "released", "Released" %>
+    <%= f.text_field :released %>
+    <%= label_tag "release_year", "Release Year" %>
+    <%= f.text_field :release_year %>
+    <%= label_tag "artist_name", "Artist Name" %>
+    <%= f.text_field :artist_name %>
+    <%= label_tag "genre", "Genre" %>
+    <%= f.text_field :genre %>
+    <%= f.submit %>
+  <% end %>
+

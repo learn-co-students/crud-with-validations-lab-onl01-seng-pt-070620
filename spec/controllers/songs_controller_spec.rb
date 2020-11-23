@@ -39,22 +39,22 @@ RSpec.describe SongsController, type: :controller do
     end
   end
 
-  context "creating a valid song" do
-    before { post :create, params: { song: valid_attributes } }
+  # context "creating a valid song" do
+  #   before { post :create, params: { song: valid_attributes } }
 
-    it "creates a new Song" do
-      expect(Song.count).to eq(1)
-    end
+  #   it "creates a new Song" do
+  #     expect(Song.count).to eq(1)
+  #   end
 
-    it "assigns and persists new song" do
-      expect(assigns(:song)).to be_a(Song)
-      expect(assigns(:song)).to be_persisted
-    end
+  #   it "assigns and persists new song" do
+  #     expect(assigns(:song)).to be_a(Song)
+  #     expect(assigns(:song)).to be_persisted
+  #   end
 
-    it "redirects to the created song" do
-      expect(response).to redirect_to(Song.last)
-    end
-  end
+  #   it "redirects to the created song" do
+  #     expect(response).to redirect_to(Song.last)
+  #   end
+  # end
 
   context "creating an invalid song" do
     before { post :create, params: { song: invalid_attributes} }

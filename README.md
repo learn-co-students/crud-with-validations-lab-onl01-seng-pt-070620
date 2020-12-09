@@ -1,3 +1,4 @@
+rails g resource ModelName column_name:datatype column_name2:datatype2 --no-test-framework
 # CRUD With Validations Lab
 
 Your goal in this lab is to create a thorough CRUD interface for one model, the
